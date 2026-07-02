@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tirumala Nursery — Our Plants</title>
+  <meta name="description" content="Tirumala Nursery - Premium quality fruit plants, imported varieties from Thailand, Japan, Brazil & more.">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" href="image copy 104.png">
+</head>
+<body>
+
+  <!-- ═══ OUR PLANTS ═══ -->
+  <section id="plants">
+    <div class="plants-hero">
+      <h2 class="plants-hero-title letter-animate" id="plantsHeading">Our Plant Collections</h2>
+      <p class="plants-hero-desc">203+ premium fruit plant varieties — hand-picked for quality</p>
+    </div>
+    <div class="plants-grid-section">
+      <div class="container">
+        <div class="plants-controls fade-in">
+          <div class="plants-search">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" placeholder="Search plants...">
+          </div>
+          <div class="plants-filter" id="plantsFilter">
+            <button class="filter-btn active" data-filter="all" id="filter-all">All Plants</button>
+            <button class="filter-btn" data-filter="imported" id="filter-imported">⭐ Imported</button>
+            <button class="filter-btn" data-filter="exotic" id="filter-exotic">🌍 Exotic</button>
+            <button class="filter-btn" data-filter="bestseller" id="filter-bestseller">🌿 Best Sellers</button>
+          </div>
+        </div>
+        <div class="plants-grid" id="plantsGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PLANT DETAIL MODAL ═══ -->
+  <div class="plant-modal" id="plantModal">
+    <div class="plant-modal-content">
+      <div class="modal-image-wrap">
+        <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+        <img id="modalImage" src="" alt="">
+      </div>
+      <div class="modal-info">
+        <h3 class="modal-plant-name" id="modalName"></h3>
+        <p class="modal-origin" id="modalOrigin"></p>
+        <div class="modal-detail-row">
+          <span class="modal-detail-label">Category</span>
+          <span class="modal-detail-value" id="modalCategory"></span>
+        </div>
+        <div class="modal-detail-row">
+          <span class="modal-detail-label">Type</span>
+          <span class="modal-detail-value" id="modalType"></span>
+        </div>
+        <div class="modal-detail-row">
+          <span class="modal-detail-label">Origin</span>
+          <span class="modal-detail-value" id="modalOriginDetail"></span>
+        </div>
+        <div class="modal-description">
+          <h4>Description</h4>
+          <p id="modalDesc"></p>
+        </div>
+        <a class="btn btn-whatsapp modal-whatsapp" id="modalWhatsApp" href="#" target="_blank">💬 Enquire on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

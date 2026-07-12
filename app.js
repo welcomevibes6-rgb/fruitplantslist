@@ -1,5 +1,5 @@
 /* ============================================
-   TIRUMALA NURSERY — App JavaScript
+   Fruit Plants List — App JavaScript
    ============================================ */
 
 // ── Plant Data (205 plants mapped to images) ──
@@ -430,7 +430,7 @@ function openPlantModal(id) {
   document.getElementById('modalOriginDetail').textContent = plant.origin;
   document.getElementById('modalDesc').textContent = plant.desc;
   document.getElementById('modalWhatsApp').href = 
-    `https://wa.me/919949492854?text=Hi%20Tirumala%20Nursery!%20I'm%20interested%20in%20${encodeURIComponent(plant.name)}.%20Please%20share%20details.`;
+    `https://wa.me/919949492854?text=Hi!%20I'm%20interested%20in%20${encodeURIComponent(plant.name)}.%20Please%20share%20details.`;
 
   // Animate name letter by letter
   const nameEl = document.getElementById('modalName');
@@ -608,7 +608,7 @@ function sendWhatsApp(e) {
   e.preventDefault();
   const name = document.getElementById('form-name').value;
   const message = document.getElementById('form-message').value;
-  const text = `Hi Tirumala Nursery! My name is ${name}. ${message}`;
+  const text = `Hi! My name is ${name}. ${message}`;
   window.open(`https://wa.me/919949492854?text=${encodeURIComponent(text)}`, '_blank');
 }
 
